@@ -4,7 +4,7 @@ Some User scripts written by myself.
 
 ## List
 
-- [`WrapperCode.user.js`](https://github.com/Hentioe/userscripts/blob/master/WrapperCode.user.js) - When the Chrome browser is translating a webpage, it may translate the content of the code because part of the code is not wrapped by the code tag. This script can solve this problem.
+- [`WrapperCode.user.js`](https://github.com/Hentioe/userscripts/raw/master/WrapperCode.user.js) - When the Chrome browser is translating a webpage, it may translate the content of the code because part of the code is not wrapped by the code tag. This script can solve this problem.
 
 ## You need to know
 
