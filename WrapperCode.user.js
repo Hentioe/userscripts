@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WrapperCode
 // @namespace    https://github.com/Hentioe
-// @version      0.1.0
+// @version      0.1.1
 // @description  Use code to wrap the content of the pre tag.
 // @author       Hentioe
 // @match https://*/*
@@ -19,6 +19,6 @@
           .length > 0
     )
     .forEach((elem) => {
-      elem.innerHTML = `<code>${elem.innerHTML}</code>`;
+      elem.innerHTML = `<code style="border:0;margin:0;padding:0;">${elem.innerHTML}</code>`;
     });
 })();
