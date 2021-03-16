@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         WrapperCode
+// @name         CodeWrapper
 // @namespace    https://github.com/Hentioe
 // @version      0.1.1
 // @description  Use code to wrap the content of the pre tag.
@@ -11,6 +11,8 @@
 (function () {
   "use strict";
 
+  const codeStyle = "border:0;margin:0;padding:0;";
+
   Array.prototype.slice
     .call(document.getElementsByTagName("pre"))
     .filter(
@@ -19,6 +21,6 @@
           .length > 0
     )
     .forEach((elem) => {
-      elem.innerHTML = `<code style="border:0;margin:0;padding:0;">${elem.innerHTML}</code>`;
+      elem.innerHTML = `<code style="${codeStyle}">${elem.innerHTML}</code>`;
     });
 })();
